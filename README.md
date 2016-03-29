@@ -5,9 +5,9 @@ make a Excel mosaic picture from image.
 ## Description
 img2excel.py makes make a Excel mosaic picture from image.
 
-！[Original](namiura_small.jpg "Original Image")
+！[Original](namiura_small.jpg)
 ->
-！[Excel File](namiura_excel_small.jpg "Excel File")
+！[Excel File](namiura_excel_small.jpg)
 
 ## Synopsis
 
