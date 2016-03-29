@@ -8,7 +8,7 @@ import argparse
 import os
 from PIL import Image # Pillow or PIL
 from openpyxl import Workbook # library to r/w excel -> https://openpyxl.readthedocs.org/
-from openpyxl.styles import PatternFill 
+from openpyxl.styles import PatternFill
 
 def img2Excel(imgFile, excelFile, columns):
     ''' make a Excel mosaic picture from image '''
@@ -38,10 +38,7 @@ def img2Excel(imgFile, excelFile, columns):
     n2A1 = lambda n: (chr(((n-1)//26)+64) if n>26 else '') + chr((n-1)%26+65)
     for n in range(1,smlWidth+1):
         ws1.column_dimensions[n2A1(n)].width=2.5 # set column width, TODO: better way ???
-
     wb.save(excelFile)
-
-img2Excel('namiura.jpg', 'namiura.elsx', 80)
 
 if __name__ == '__main__':
     # args parse
